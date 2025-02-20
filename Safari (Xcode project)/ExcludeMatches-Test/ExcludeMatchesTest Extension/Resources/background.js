@@ -9,7 +9,7 @@ const directive = {
     js: ['injectedscript.js'],
     matches: matches,
     excludeMatches: excludeMatches,
-    //persistAcrossSessions: false,
+    persistAcrossSessions: false,
     runAt: 'document_start'
 };
 

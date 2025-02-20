@@ -1,0 +1,10 @@
+{
+    "extension_name": {
+        "message": "ExcludeMatchesTest Extension",
+        "description": "The display name for the extension."
+    },
+    "extension_description": {
+        "message": "Test excludeMatches in injected scripts.",
+        "description": "Description of what the extension does."
+    }
+}

@@ -20,20 +20,26 @@ What we are testing is if `scripting.registerContentScripts()` API works properl
 
 The `excludeMatches` array defines the array of pages that this content script is excluded from but would otherwise be injected into.
 
-```const matches = ['*://*/*'];
-const excludeMatches = ['*://*.example.com/*'];```
+```
+const matches = ['*://*/*'];
+const excludeMatches = ['*://*.example.com/*'];
+```
 
-```const directive = {
+```
+const directive = {
   id: 'injected-jstest',
   js: ['injectedscript.js'],
   matches: matches,
   excludeMatches: excludeMatches,
   persistAcrossSessions: false,
   runAt: 'document_start'
-};```
+};
+```
 
-```await chrome.scripting.registerContentScripts([directive])
-.catch(reason => { console.log("[SW] >>> inject script error:",reason); });```
+```
+await chrome.scripting.registerContentScripts([directive])
+.catch(reason => { console.log("[SW] >>> inject script error:",reason); });
+```
 
 #### Test Results
 

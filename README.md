@@ -5,11 +5,8 @@
 #### Tests performed with:
 
 Chrome version 133.0.6943.100
-
 Edge version 133.0.3065.69
-
 Firefox version 135.0.1
-
 Safari version 18.3, MacOS Sequoia 15.3.1, XCode version 16.2
 
 #### What is this test
@@ -23,27 +20,17 @@ What we are testing is if `scripting.registerContentScripts()` API works properl
 The `excludeMatches` array defines the array of pages that this content script is excluded from but would otherwise be injected into.
 
 `const matches = ['*://*/*'];`
-
 `const excludeMatches = ['*://*.example.com/*'];`
-
 `const directive = {`
-
- `id: 'injected-jstest',`
-
- ` js: ['injectedscript.js'],`
-
- `matches: matches,`
-
- `excludeMatches: excludeMatches,`
-
- `persistAcrossSessions: false,`
-
- `runAt: 'document_start'`
-
+   `id: 'injected-jstest',`
+   `js: ['injectedscript.js'],`
+   `matches: matches,`
+   `excludeMatches: excludeMatches,`
+   `persistAcrossSessions: false,`
+   `runAt: 'document_start'`
 `};`
 
 `await chrome.scripting.registerContentScripts([directive])`
-
 `.catch(reason => { console.log("[SW] >>> inject script error:",reason); });`
 
 #### Test Results

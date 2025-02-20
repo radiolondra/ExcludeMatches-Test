@@ -46,6 +46,8 @@ The `excludeMatches` array defines the array of pages that this content script i
 
 #### Test Results
 
+
+
 The API is properly working in Chromium and Firefox browsers, where `excludeMatches `array is fully honored (script is injected everywhere **BUT** in `example.com` pages). 
 
 in Safari, instead, the `excludeMatches `array is as if it did not exist (**totally ignored**), and the script is injected everywhere, including `example.com` pages. 

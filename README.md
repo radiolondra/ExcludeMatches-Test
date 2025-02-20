@@ -14,6 +14,8 @@ Safari version 18.3, MacOS Sequoia 15.3.1, XCode version 16.2
 
 #### What is this test
 
+
+
 The repository contains the extensions for Chromium, Firefox and Safari (complete XCode project) browsers.
 
 What we are testing is if `scripting.registerContentScripts()` API works properly in the different browsers when the service worker injects a script using an `excludeMatches` array.

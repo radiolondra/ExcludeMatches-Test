@@ -5,8 +5,11 @@
 #### Tests performed with:
 
 Chrome version 133.0.6943.100
+
 Edge version 133.0.3065.69
+
 Firefox version 135.0.1
+
 Safari version 18.3, MacOS Sequoia 15.3.1, XCode version 16.2
 
 #### What is this test
